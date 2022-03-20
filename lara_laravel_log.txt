@@ -1,0 +1,10 @@
+php artisan make:migration create_menus_table
+php artisan make:migration create_permisos_table
+php artisan make:migration create_permiso_detalles_table
+
+php artisan make:model Menu
+php artisan make:model Permiso
+php artisan make:model PermisoDetalle
+
+php artisan make:migration add_relacion_to_permisos --table="permisos"
+php artisan make:migration add_relacion_to_permiso_detalles --table="permiso_detalles"
