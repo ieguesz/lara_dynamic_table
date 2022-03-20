@@ -75,9 +75,9 @@ class PermisoController extends Controller
         return Datatables::of($datos)
             ->addColumn('action', function ($dato) {
                 return "<center>
-                           <a class='btn btn-info' title='Información' data-toggle='modal'
+                           <!-- <a class='btn btn-info' title='Información' data-toggle='modal'
                             data-target='#m-open-modal-view'
-                            data-url='".route('access.permiso.show',$dato->id)."'><i class='far fa-eye'></i></a>
+                            data-url='".route('access.permiso.show',$dato->id)."'><i class='far fa-eye'></i></a> -->
                             <a class='btn btn-success' title='Editar'
                             href='".route('access.permiso.edit',$dato->id)."'><i class='fa fa-edit'></i></a>
                             <a class='btn btn-secondary' data-toggle='modal'
